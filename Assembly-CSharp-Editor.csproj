@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0E2B3EE9-AB51-C276-4F36-AFF2BB8B16CF}</ProjectGuid>
+    <ProjectGuid>{4362880A-94A9-0351-07A4-6EA1C8E05203}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -199,73 +199,73 @@
     <Compile Include="Assets\Packages\Anima2D\Scripts\Editor\WeightEditor.cs" />
     <Compile Include="Assets\Packages\Anima2D\Scripts\Editor\WindowEditorTool.cs" />
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Path.Editor">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -457,7 +457,7 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -816,7 +816,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{4223B244-7537-6CB2-6331-1FA6F2C1958B}</Project>
+      <Project>{58BAB857-BA4D-D6A5-4924-ABC6B450032A}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
   </ItemGroup>
