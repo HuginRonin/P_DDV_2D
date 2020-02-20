@@ -14,17 +14,23 @@ public class MovementController : MonoBehaviour
     private float decceleration = 5f;
     [SerializeField]
     private float deccelerationCoefficient;
-    private float currentSpeed = 0.0f;
+    public float currentSpeed = 0.0f;
     private bool stopping = true;
     private bool goingRight=false;
     [SerializeField]
     private float RampDrag;
     private bool OnRamp;
+    private Vector2 effectForces;
+    private float effectDeccelx;
+    private float effectDeccely;
+    private float momentumY;
+    private bool isPropulsed;
     // Start is called before the first frame update
     void Start()
     {
         colDetect = GetComponent<CollisionDetector>();
         rb2D = GetComponent<Rigidbody2D>();
+        effectForces = new Vector2(0, 0);
     }
 
     // Update is called once per frame
@@ -57,7 +63,14 @@ public class MovementController : MonoBehaviour
         }
         else
         {
-            rb2D.velocity = new Vector2(currentSpeed, rb2D.velocity.y);
+            if (isPropulsed)
+            {
+                rb2D.velocity = new Vector2(effectForces.x + currentSpeed, effectForces.y);
+            }
+            else
+            {
+                rb2D.velocity = new Vector2(currentSpeed, rb2D.velocity.y);
+            }            
         }        
 
         if (stopping)
@@ -82,6 +95,21 @@ public class MovementController : MonoBehaviour
                 currentSpeed = Mathf.Max(-maxSpeed, currentSpeed - acceleration * Time.deltaTime);
             }
         }
+
+        if (effectForces.x > 0 || effectForces.y > 0)
+        {
+            effectForces.x = Mathf.Max(0, effectForces.x - effectDeccelx * Time.deltaTime);
+            effectForces.y = Mathf.Max(0, effectForces.y - effectDeccely * Time.deltaTime);
+        }
+        else if (effectForces.x < 0 || effectForces.y < 0)
+        {
+            effectForces.x = Mathf.Min(0, effectForces.x + effectDeccelx * Time.deltaTime);
+            effectForces.y = Mathf.Min(0, effectForces.y + effectDeccely * Time.deltaTime);
+        }
+        else
+        {
+            isPropulsed = false;
+        }
     }
 
     public void OnMovement(InputValue val)
@@ -97,12 +125,19 @@ public class MovementController : MonoBehaviour
         {
             goingRight = true;
             
-        }     
+        }
+        else
+        {
+            stopping = true;
+            decceleration = Mathf.Abs(currentSpeed / deccelerationCoefficient);
+        }
     }
 
-    public void OnMovementEnd()
+    public void TriggerEffect(Vector2 force)
     {
-        stopping = true;
-        decceleration = Mathf.Abs(currentSpeed / deccelerationCoefficient);
+        effectForces = force;
+        effectDeccelx = Mathf.Abs(effectForces.x / deccelerationCoefficient);
+        effectDeccely = Mathf.Abs(effectForces.y / deccelerationCoefficient);
+        isPropulsed = true;
     }
 }

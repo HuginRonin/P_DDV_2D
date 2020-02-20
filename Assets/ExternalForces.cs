@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class ExternalForces : MonoBehaviour
 {
+    MovementController mov;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        mov = GetComponent<MovementController>();
     }
 
     // Update is called once per frame
@@ -18,6 +20,6 @@ public class ExternalForces : MonoBehaviour
 
     public void Bounce(Vector2 force)
     {
-        gameObject.GetComponent<Rigidbody2D>().AddForce(force, ForceMode2D.Impulse);
+        mov.TriggerEffect(force);
     }
 }

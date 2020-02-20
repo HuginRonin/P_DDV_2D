@@ -66,6 +66,7 @@
     <Compile Include="Assets\Bullet.cs" />
     <Compile Include="Assets\ExternalForces.cs" />
     <Compile Include="Assets\Gun.cs" />
+    <Compile Include="Assets\MobilePlatform.cs" />
     <Compile Include="Assets\ObjectPooler.cs" />
     <Compile Include="Assets\Packages\Anima2D\Examples\Scripts\CharacterMotion.cs" />
     <Compile Include="Assets\Packages\Anima2D\Examples\Scripts\Follow.cs" />
@@ -100,6 +101,7 @@
     <Compile Include="Assets\Scripts\Player\MovementController.cs" />
     <Compile Include="Assets\Scripts\Player\Spawning.cs" />
     <Compile Include="Assets\Textures\BayatGames\Rotator.cs" />
+    <Compile Include="Assets\WindZone.cs" />
     <None Include="Assets\Packages\Anima2D\Readme.txt" />
     <None Include="Assets\Textures\BayatGames\Free Platform Game Assets\Readme.txt" />
     <None Include="Assets\Packages\Anima2D\Examples\Shaders\VertexLitOneDirectional.shader" />

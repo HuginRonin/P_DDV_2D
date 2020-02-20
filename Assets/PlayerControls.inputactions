@@ -14,14 +14,6 @@
                     "interactions": ""
                 },
                 {
-                    "name": "MovementEnd",
-                    "type": "Button",
-                    "id": "58377ae5-b006-467b-9d86-cd4dd5703438",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
                     "name": "JumpStart",
                     "type": "Button",
                     "id": "7c7bb627-bb14-47bd-b82c-0d42a8cbcb37",
@@ -70,7 +62,7 @@
                     "name": "1D Axis",
                     "id": "32283f19-8b71-488d-a696-841a5fd98fdf",
                     "path": "1DAxis",
-                    "interactions": "Press",
+                    "interactions": "Press(behavior=2)",
                     "processors": "Normalize(min=-1,max=1)",
                     "groups": "",
                     "action": "Movement",
@@ -103,7 +95,7 @@
                     "name": "1D Axis",
                     "id": "ee92a4de-2624-4611-a001-7ab1ff7bf95a",
                     "path": "1DAxis",
-                    "interactions": "Press",
+                    "interactions": "Press(behavior=2)",
                     "processors": "Normalize(min=-1,max=1)",
                     "groups": "",
                     "action": "Movement",
@@ -261,50 +253,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "JumpEnd",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "da53abe7-d61a-4d51-bcfe-d2c09647e99e",
-                    "path": "<Keyboard>/a",
-                    "interactions": "Press(behavior=1)",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MovementEnd",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "5152c866-4876-4e48-8250-79739adcaaef",
-                    "path": "<Keyboard>/d",
-                    "interactions": "Press(behavior=1)",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MovementEnd",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "6fe9b25a-3b0f-455d-86e1-78e3defb90f4",
-                    "path": "<Keyboard>/leftArrow",
-                    "interactions": "Press(behavior=1)",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MovementEnd",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "32fa37be-293d-4564-b2a2-a06299483f5e",
-                    "path": "<Keyboard>/rightArrow",
-                    "interactions": "Press(behavior=1)",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MovementEnd",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
