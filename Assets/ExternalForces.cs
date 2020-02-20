@@ -16,9 +16,8 @@ public class ExternalForces : MonoBehaviour
         
     }
 
-    public void Bounce(Bouncer b, Vector2 force)
+    public void Bounce(Vector2 force)
     {
-        
         gameObject.GetComponent<Rigidbody2D>().AddForce(force, ForceMode2D.Impulse);
     }
 }

@@ -23,12 +23,12 @@ public class Spawning : MonoBehaviour
         if(Gamepad.current!= null)
         {
             dev = Gamepad.current;
-            input.SwitchCurrentControlScheme(dev);
+            //input.SwitchCurrentControlScheme(dev);
         }
         else
         {
             dev = Keyboard.current;
-            input.SwitchCurrentControlScheme(dev);
+            //input.SwitchCurrentControlScheme(dev);
         }
 
 

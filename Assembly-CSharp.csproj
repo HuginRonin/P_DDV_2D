@@ -63,7 +63,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Bouncer.cs" />
+    <Compile Include="Assets\Bullet.cs" />
     <Compile Include="Assets\ExternalForces.cs" />
+    <Compile Include="Assets\Gun.cs" />
+    <Compile Include="Assets\ObjectPooler.cs" />
     <Compile Include="Assets\Packages\Anima2D\Examples\Scripts\CharacterMotion.cs" />
     <Compile Include="Assets\Packages\Anima2D\Examples\Scripts\Follow.cs" />
     <Compile Include="Assets\Packages\Anima2D\Examples\Scripts\SkinnedMeshCombiner.cs" />
@@ -89,6 +92,7 @@
     <Compile Include="Assets\Packages\Anima2D\Scripts\SpriteMeshAnimation.cs" />
     <Compile Include="Assets\Packages\Anima2D\Scripts\SpriteMeshInstance.cs" />
     <Compile Include="Assets\Scripts\Items\PointOfInterest.cs" />
+    <Compile Include="Assets\Scripts\MyMachinegun.cs" />
     <Compile Include="Assets\Scripts\Player\CameraTarget.cs" />
     <Compile Include="Assets\Scripts\Player\CollisionDetector.cs" />
     <Compile Include="Assets\Scripts\Player\CrouchController.cs" />

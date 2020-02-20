@@ -16,7 +16,7 @@ public class Bouncer : MonoBehaviour
         {
             Debug.Log("si");
             var force = bounceForce * direction;
-            reciever.Bounce(this, force);
+            reciever.Bounce(force);
             //o
             //other.GetComponent<RigidBody2D>.AddForce(force, ForceMode2D.Impulse); //asegurarse de que esté todo
         }
