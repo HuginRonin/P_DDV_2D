@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7702972894625034298}
   - component: {fileID: 7702972894625034299}
   - component: {fileID: 7702972894625034277}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'Plataforma '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7702972896008427482}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: P2
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
@@ -164,7 +164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7702972896158054161}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: P1
   m_TagString: Untagged
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
@@ -194,7 +194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7702972896181386144}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: "Plataforma M\xF3vil"
   m_TagString: Untagged
   m_Icon: {fileID: 0}

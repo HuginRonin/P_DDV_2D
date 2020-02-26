@@ -62,12 +62,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Bouncer.cs" />
-    <Compile Include="Assets\Bullet.cs" />
-    <Compile Include="Assets\ExternalForces.cs" />
-    <Compile Include="Assets\Gun.cs" />
-    <Compile Include="Assets\MobilePlatform.cs" />
-    <Compile Include="Assets\ObjectPooler.cs" />
     <Compile Include="Assets\Packages\Anima2D\Examples\Scripts\CharacterMotion.cs" />
     <Compile Include="Assets\Packages\Anima2D\Examples\Scripts\Follow.cs" />
     <Compile Include="Assets\Packages\Anima2D\Examples\Scripts\SkinnedMeshCombiner.cs" />
@@ -92,16 +86,32 @@
     <Compile Include="Assets\Packages\Anima2D\Scripts\SpriteMesh.cs" />
     <Compile Include="Assets\Packages\Anima2D\Scripts\SpriteMeshAnimation.cs" />
     <Compile Include="Assets\Packages\Anima2D\Scripts\SpriteMeshInstance.cs" />
+    <Compile Include="Assets\Scripts\BodyPart.cs" />
+    <Compile Include="Assets\Scripts\Bouncer.cs" />
+    <Compile Include="Assets\Scripts\Bullet.cs" />
+    <Compile Include="Assets\Scripts\DamageDealer.cs" />
+    <Compile Include="Assets\Scripts\DeathRecord.cs" />
+    <Compile Include="Assets\Scripts\ExternalForces.cs" />
+    <Compile Include="Assets\Scripts\GlobalHealthSystem.cs" />
+    <Compile Include="Assets\Scripts\Gun.cs" />
+    <Compile Include="Assets\Scripts\HealthSystem.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\IDamageTaker.cs" />
     <Compile Include="Assets\Scripts\Items\PointOfInterest.cs" />
+    <Compile Include="Assets\Scripts\MobilePlatform.cs" />
     <Compile Include="Assets\Scripts\MyMachinegun.cs" />
+    <Compile Include="Assets\Scripts\ObjectPooler.cs" />
+    <Compile Include="Assets\Scripts\PartHealthSystem.cs" />
     <Compile Include="Assets\Scripts\Player\CameraTarget.cs" />
     <Compile Include="Assets\Scripts\Player\CollisionDetector.cs" />
     <Compile Include="Assets\Scripts\Player\CrouchController.cs" />
     <Compile Include="Assets\Scripts\Player\JumpController.cs" />
     <Compile Include="Assets\Scripts\Player\MovementController.cs" />
     <Compile Include="Assets\Scripts\Player\Spawning.cs" />
+    <Compile Include="Assets\Scripts\Structs\PlayerInfo.cs" />
+    <Compile Include="Assets\Scripts\Weapon.cs" />
+    <Compile Include="Assets\Scripts\WeaponManager.cs" />
+    <Compile Include="Assets\Scripts\WindZone.cs" />
     <Compile Include="Assets\Textures\BayatGames\Rotator.cs" />
-    <Compile Include="Assets\WindZone.cs" />
     <None Include="Assets\Packages\Anima2D\Readme.txt" />
     <None Include="Assets\Textures\BayatGames\Free Platform Game Assets\Readme.txt" />
     <None Include="Assets\Packages\Anima2D\Examples\Shaders\VertexLitOneDirectional.shader" />
