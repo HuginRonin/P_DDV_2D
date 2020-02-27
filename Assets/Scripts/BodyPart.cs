@@ -5,6 +5,8 @@ using UnityEngine;
 public class BodyPart : PartHealthSystem
 {
     GlobalHealthSystem ghs;
+    public float ContributionFactor;
+    public float HealthContribution => (MaxHealth - CurrentHealth) * ContributionFactor;
 
     public override void TakeDamage(float amount)
     {
