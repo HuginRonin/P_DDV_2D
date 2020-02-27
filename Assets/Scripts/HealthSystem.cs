@@ -46,5 +46,7 @@ public class HealthSystem : MonoBehaviour, IDamageTaker
     {
         OnDeath?.Invoke(pInfo);
         dead = true;
+
+        gameObject.SetActive(false);
     }
 }

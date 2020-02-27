@@ -15,6 +15,12 @@ public class PlayerDetection : MonoBehaviour
         
     }
 
+    // Update is called once per frame
+    void Update()
+    {
+        DetectPlayer();
+    }
+
     Transform[] DetectPlayer()
     {
         List<Transform> AllDetectedPlayers = new List<Transform>();
@@ -40,13 +46,14 @@ public class PlayerDetection : MonoBehaviour
         {
             players.Add(item.transform);
         }
-
+        
         return true;
     }
 
     bool IsInAngle(ref List<Transform> players)
     {
-        for(int i=players.Count - 1; i>=0; i--)
+        Debug.Log("p:" + players.Count);
+        for (int i=players.Count - 1; i>=0; i--)
         {
             var angleV = GetAngle(players[i]);
 
@@ -55,7 +62,7 @@ public class PlayerDetection : MonoBehaviour
                 players.Remove(players[i]);
             }
         }
-
+    
         return players.Count > 0;
     }
 
@@ -70,7 +77,7 @@ public class PlayerDetection : MonoBehaviour
                 players.Remove(players[i]);
             }
         }
-
+     
         return players.Count > 0;
     }
 
@@ -87,12 +94,6 @@ public class PlayerDetection : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, range, Visible);
 
         return hit.collider.transform == t;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void OnDrawGizmos()

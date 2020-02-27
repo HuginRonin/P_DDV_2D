@@ -8,6 +8,7 @@ public class Gun : Weapon
     public Transform firePoint;
     public GameObject bullet;
     public GameObject muzzlePrefab;
+    public LayerMask target;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,7 @@ public class Gun : Weapon
             bullet.transform.position = firePoint.position;
             bullet.transform.rotation = firePoint.rotation;
             bullet.SetActive(true);
+            bullet.GetComponent<DamageDealer>().target = target;
         }
         //ShowEffects();
     }

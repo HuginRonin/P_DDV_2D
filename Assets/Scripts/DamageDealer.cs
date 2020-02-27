@@ -5,6 +5,7 @@ using UnityEngine;
 public class DamageDealer : MonoBehaviour
 {
     public float dmgAmount;
+    public LayerMask target;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,10 +20,14 @@ public class DamageDealer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        var health = collision.GetComponent<IDamageTaker>();
-        if (health != null)
-        {
-            health.TakeDamage(dmgAmount);
+        if (1 << collision.gameObject.layer == target.value)
+        { 
+            var health = collision.GetComponent<IDamageTaker>();
+            if (health != null)
+            {
+                
+                health.TakeDamage(dmgAmount);
+            }
         }
     }
 }
