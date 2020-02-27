@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class GlobalHealthSystem : MonoBehaviour
@@ -9,14 +10,32 @@ public class GlobalHealthSystem : MonoBehaviour
     public static OnDeathDelegate OnDeath;
 
     private PlayerInfo pInfo;
-    List<BodyPart> parts;
+    BodyPart[] parts;
 
+    List<Leg> legs => parts.OfType<Leg>().ToList();
+
+    public float maxHealth;
     public float currentHealth => GetGlobalHealth();
     private bool dead = false;
+
+    public float SpeedModifier => GetSpeedModifier();
+
+    private float GetSpeedModifier()
+    {
+        float healthFraction = 0;
+        for(int i = 0; i <legs.Count; i++)
+        {
+            healthFraction += legs[i].HealthFraction;
+                   
+        }
+        var avg = healthFraction / legs.Count;  
+        return avg;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        parts = GetComponentsInChildren<BodyPart>();
     }
 
     private void Update()
@@ -34,7 +53,13 @@ public class GlobalHealthSystem : MonoBehaviour
 
     private float GetGlobalHealth()
     {
-        return 0;
+        float missingHealth = 0;
+        for (int i = 0; i < parts.Length; i++)
+        {
+            missingHealth += parts[i].HealthContribution;
+        }
+
+        return maxHealth - missingHealth;
     }
 
     void Die()

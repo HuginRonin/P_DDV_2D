@@ -25,10 +25,13 @@ public class MovementController : MonoBehaviour
     private float effectDeccely;
     private float momentumY;
     private bool isPropulsed;
+
+    private GlobalHealthSystem ghs;
     // Start is called before the first frame update
     void Start()
     {
         colDetect = GetComponent<CollisionDetector>();
+        ghs = GetComponent<GlobalHealthSystem>();
         rb2D = GetComponent<Rigidbody2D>();
         effectForces = new Vector2(0, 0);
     }
@@ -36,7 +39,7 @@ public class MovementController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+      
     }
 
     void FixedUpdate()
@@ -88,11 +91,11 @@ public class MovementController : MonoBehaviour
         {
             if (goingRight)
             {
-                currentSpeed = Mathf.Min(maxSpeed, currentSpeed + acceleration*Time.deltaTime);
+                currentSpeed = Mathf.Min(maxSpeed, currentSpeed + acceleration * Time.deltaTime); //* ghs.SpeedModifier);
             }
             else
             {
-                currentSpeed = Mathf.Max(-maxSpeed, currentSpeed - acceleration * Time.deltaTime);
+                currentSpeed = Mathf.Max(-maxSpeed, currentSpeed - acceleration * Time.deltaTime); //* ghs.SpeedModifier);
             }
         }
 
