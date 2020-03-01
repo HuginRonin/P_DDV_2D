@@ -111,6 +111,7 @@
     <Compile Include="Assets\Scripts\Player\Spawning.cs" />
     <Compile Include="Assets\Scripts\PlayerDetection.cs" />
     <Compile Include="Assets\Scripts\Structs\PlayerInfo.cs" />
+    <Compile Include="Assets\Scripts\TrapPlayerDetection.cs" />
     <Compile Include="Assets\Scripts\Weapon.cs" />
     <Compile Include="Assets\Scripts\WeaponManager.cs" />
     <Compile Include="Assets\Scripts\WindZone.cs" />
@@ -185,6 +186,21 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.IK.Editor">
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.IK.Runtime">
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Animation.Runtime">
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Animation.Triangle.Runtime">
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Animation.Editor">
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

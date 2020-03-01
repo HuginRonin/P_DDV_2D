@@ -25,7 +25,7 @@ public class DamageDealer : MonoBehaviour
             var health = collision.GetComponent<IDamageTaker>();
             if (health != null)
             {
-                
+                Debug.Log("ting");
                 health.TakeDamage(dmgAmount);
             }
         }

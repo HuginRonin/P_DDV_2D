@@ -5799,8 +5799,11 @@ GameObject:
   - component: {fileID: 705255390}
   - component: {fileID: 705255395}
   - component: {fileID: 705255394}
+  - component: {fileID: 705255398}
+  - component: {fileID: 705255397}
+  - component: {fileID: 705255396}
   - component: {fileID: 705255393}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Enemigo Trampa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5885,11 +5888,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705255389}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.57, y: 8.82, z: -1.7447731}
-  m_LocalScale: {x: 6, y: 6, z: 1}
+  m_LocalPosition: {x: -16.57, y: 8.34, z: -1.7447731}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &705255393
 MonoBehaviour:
@@ -5900,7 +5903,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 705255389}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 151470219a3978e4ca3859a994ca27e0, type: 3}
+  m_Script: {fileID: 11500000, guid: f2df2a229cb5b0441a7dc4a4200dee86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Player:
@@ -5909,8 +5912,8 @@ MonoBehaviour:
   Visible:
     serializedVersion: 2
     m_Bits: 4294967295
-  range: 0
-  visionAngle: 0
+  range: 3.05
+  visionAngle: 360
 --- !u!114 &705255394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5923,7 +5926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6811a2012ae8377449e84c6d550e1ab8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dmgAmount: 0
+  dmgAmount: 1
   target:
     serializedVersion: 2
     m_Bits: 1024
@@ -5943,6 +5946,59 @@ MonoBehaviour:
   pInfo:
     ID: 1
     name: Mursilago
+--- !u!58 &705255396
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705255389}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.342912
+--- !u!50 &705255397
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705255389}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!70 &705255398
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705255389}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00000001289294, y: 0.108153835}
+  m_Size: {x: 2.2777781, y: 1.3404528}
+  m_Direction: 1
 --- !u!1 &804891793
 GameObject:
   m_ObjectHideFlags: 0
@@ -7866,7 +7922,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1312184495
 GameObject:
@@ -8075,7 +8131,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1457817776
 GameObject:
@@ -8092,6 +8148,9 @@ GameObject:
   - component: {fileID: 1457817780}
   - component: {fileID: 1457817782}
   - component: {fileID: 1457817783}
+  - component: {fileID: 1457817784}
+  - component: {fileID: 1457817785}
+  - component: {fileID: 1457817786}
   m_Layer: 11
   m_Name: Enemigo Patrullero
   m_TagString: Untagged
@@ -8138,7 +8197,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2845758644120dd41bf800e4f257253a, type: 3}
+  m_Sprite: {fileID: 4035959289877228764, guid: 0fd9e80f5aa61a34da2e829391da6fa6,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8198,7 +8258,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 5.1199994, y: 5.1199994}
+  m_Size: {x: 5.1199994, y: 7.5789585}
   m_Direction: 0
 --- !u!50 &1457817781
 Rigidbody2D:
@@ -8257,6 +8317,57 @@ MonoBehaviour:
   pInfo:
     ID: 1
     name: Enemigo
+--- !u!95 &1457817784
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457817776}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4f4dc4e1703a3eb4b9447f131b494b6a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1457817785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457817776}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6811a2012ae8377449e84c6d550e1ab8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dmgAmount: 1
+  target:
+    serializedVersion: 2
+    m_Bits: 1024
+--- !u!70 &1457817786
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457817776}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.9, y: -1.53}
+  m_Size: {x: 4.31, y: 1.35}
+  m_Direction: 1
 --- !u!1 &1553138362
 GameObject:
   m_ObjectHideFlags: 0
@@ -18121,6 +18232,7 @@ GameObject:
   - component: {fileID: 5561507169738501525}
   - component: {fileID: 5561507169738501524}
   - component: {fileID: 5561507169738501526}
+  - component: {fileID: 5561507169738501527}
   m_Layer: 10
   m_Name: Personaje
   m_TagString: Player
@@ -18288,6 +18400,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5561507169738501527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5561507169738501521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5745aa76e43a4145b878797053ee4b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 9
+  pInfo:
+    ID: 0
+    name: Player
 --- !u!61 &5561507169738501544
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18688,22 +18816,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c008f954fe54a8bb972de1018a2cb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RootBone: {fileID: 2108404407}
-  m_BoneTransforms:
-  - {fileID: 2108404407}
-  - {fileID: 2143637954}
-  - {fileID: 62630711}
-  - {fileID: 691216392}
-  - {fileID: 1312184496}
-  - {fileID: 227576573}
-  - {fileID: 1888745604}
-  - {fileID: 579964108}
-  - {fileID: 1563517629}
-  - {fileID: 956729530}
-  - {fileID: 642625205}
+  m_RootBone: {fileID: 0}
+  m_BoneTransforms: []
   m_Bounds:
-    m_Center: {x: 0.2674399, y: 0.011835575, z: 0}
-    m_Extent: {x: 1.1392875, y: 1.8500006, z: 0}
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   m_UseBatching: 1
 --- !u!4 &5561507171279160905
 Transform:
@@ -18934,12 +19051,12 @@ PrefabInstance:
     - target: {fileID: 7453939037014835699, guid: b840ec13ae42794498845af4232dae8b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.8
+      value: -19.39
       objectReference: {fileID: 0}
     - target: {fileID: 7453939037014835699, guid: b840ec13ae42794498845af4232dae8b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20.2
+      value: 10.17
       objectReference: {fileID: 0}
     - target: {fileID: 7453939037014835699, guid: b840ec13ae42794498845af4232dae8b,
         type: 3}

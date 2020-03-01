@@ -8,7 +8,7 @@ public class PlayerDetection : MonoBehaviour
     public LayerMask Visible;
     public float range;
     public float visionAngle;
-    
+    public Transform[] PlayersDetected => DetectPlayer();
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +21,7 @@ public class PlayerDetection : MonoBehaviour
         DetectPlayer();
     }
 
-    Transform[] DetectPlayer()
+    protected Transform[] DetectPlayer()
     {
         List<Transform> AllDetectedPlayers = new List<Transform>();
         if (IsInRange(ref AllDetectedPlayers))
@@ -52,7 +52,6 @@ public class PlayerDetection : MonoBehaviour
 
     bool IsInAngle(ref List<Transform> players)
     {
-        Debug.Log("p:" + players.Count);
         for (int i=players.Count - 1; i>=0; i--)
         {
             var angleV = GetAngle(players[i]);
