@@ -98,6 +98,7 @@
     <Compile Include="Assets\Scripts\Interfaces\IDamageTaker.cs" />
     <Compile Include="Assets\Scripts\Items\PointOfInterest.cs" />
     <Compile Include="Assets\Scripts\Leg.cs" />
+    <Compile Include="Assets\Scripts\MissileLauncher.cs" />
     <Compile Include="Assets\Scripts\MobilePlatform.cs" />
     <Compile Include="Assets\Scripts\MyMachinegun.cs" />
     <Compile Include="Assets\Scripts\ObjectPooler.cs" />
@@ -110,6 +111,8 @@
     <Compile Include="Assets\Scripts\Player\MovementController.cs" />
     <Compile Include="Assets\Scripts\Player\Spawning.cs" />
     <Compile Include="Assets\Scripts\PlayerDetection.cs" />
+    <Compile Include="Assets\Scripts\Rocket.cs" />
+    <Compile Include="Assets\Scripts\ShooterPlayerDetection.cs" />
     <Compile Include="Assets\Scripts\Structs\PlayerInfo.cs" />
     <Compile Include="Assets\Scripts\TrapPlayerDetection.cs" />
     <Compile Include="Assets\Scripts\Weapon.cs" />
@@ -127,6 +130,9 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Animation.Runtime">
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -139,14 +145,23 @@
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.IK.Editor">
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Path.Editor">
       <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.IK.Runtime">
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Animation.Triangle.Runtime">
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
@@ -172,6 +187,9 @@
     <Reference Include="Unity.2D.SpriteShape.Runtime">
       <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Animation.Editor">
+      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
@@ -186,21 +204,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.IK.Editor">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.IK.Runtime">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Animation.Runtime">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Animation.Editor">
-      <HintPath>D:/Uni/2º/2º Trimestre/Desarrollo de Juegos 2D/ProyectoDesarrollo2D/P_DDV_2D/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

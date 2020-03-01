@@ -92,7 +92,7 @@ public class PlayerDetection : MonoBehaviour
         Vector3 dir = t.position - transform.position;
         RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, range, Visible);
 
-        return hit.collider.transform == t;
+        return (hit.collider.transform == t);
     }
 
     private void OnDrawGizmos()

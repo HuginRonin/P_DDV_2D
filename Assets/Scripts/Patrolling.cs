@@ -13,6 +13,8 @@ public class Patrolling : MonoBehaviour
     public float lookWallDistance;
     [SerializeField]
     private float groundAngle;
+    [SerializeField]
+    private float attackRange;
 
     private DamageDealer dmg;
     private PlayerDetection detect;
@@ -22,7 +24,7 @@ public class Patrolling : MonoBehaviour
     {
         detect = GetComponent<PlayerDetection>();
         ator = GetComponent<Animator>();
-        dmg = GetComponent<DamageDealer>();
+        dmg = GetComponentInChildren<DamageDealer>();
     }
 
     // Update is called once per frame
@@ -51,10 +53,14 @@ public class Patrolling : MonoBehaviour
         dmg.enabled = true;
 
         Transform t = detect.PlayersDetected[0].transform;
-        Vector3 dir = (t.position - transform.position).normalized;
-        transform.Translate(dir * Speed * Time.deltaTime, Space.World);
-
-        ator.SetBool("Attack",true);
+        Vector3 dir = (t.position - transform.position);
+        dir.y = 0;
+        transform.Translate(dir.normalized * Speed * Time.deltaTime, Space.World);
+        
+        if(dir.magnitude < attackRange)
+        {
+            ator.SetBool("Attack", true);
+        }       
     }
 
     private void FixedUpdate()

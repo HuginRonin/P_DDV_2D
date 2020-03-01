@@ -6,7 +6,7 @@ using UnityEngine;
 public class Gun : Weapon
 {
     public Transform firePoint;
-    public GameObject bullet;
+    public GameObject projectile;
     public GameObject muzzlePrefab;
     public LayerMask target;
     // Start is called before the first frame update
@@ -24,9 +24,9 @@ public class Gun : Weapon
         }
     }
 
-    protected void Fire()
+    protected virtual void Fire()
     {
-        GameObject bullet = ObjectPooler.GetPooledObject("Bullet");
+        GameObject bullet = ObjectPooler.GetPooledObject(projectile.name);
         if (bullet)
         {
             bullet.transform.position = firePoint.position;
