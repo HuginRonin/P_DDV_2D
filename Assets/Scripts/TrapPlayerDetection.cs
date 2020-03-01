@@ -28,6 +28,7 @@ public class TrapPlayerDetection : PlayerDetection
         else
         {
             ator.SetBool("Range", false);
+            ator.SetBool("Attack", false);
         }
     }
 

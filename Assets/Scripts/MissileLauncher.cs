@@ -33,8 +33,9 @@ public class MissileLauncher : Gun
             rocket.transform.rotation = firePoint.rotation;
             rocket.SetActive(true);
             rocket.GetComponent<DamageDealer>().target = target;
+
             rocket.GetComponent<Rocket>().enabled = true;
-            rocket.GetComponent<Rocket>().target = detect.PlayersDetected[0];
+            
         }
     }
 }

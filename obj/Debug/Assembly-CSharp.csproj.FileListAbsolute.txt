@@ -301,3 +301,13 @@ D:\Uni\2º\2º Trimestre\Desarrollo de Juegos 2D\ProyectoDesarrollo2D\P_DDV_2D\o
 D:\Uni\2º\2º Trimestre\Desarrollo de Juegos 2D\ProyectoDesarrollo2D\P_DDV_2D\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 D:\Uni\2º\2º Trimestre\Desarrollo de Juegos 2D\ProyectoDesarrollo2D\P_DDV_2D\obj\Debug\Assembly-CSharp.dll
 D:\Uni\2º\2º Trimestre\Desarrollo de Juegos 2D\ProyectoDesarrollo2D\P_DDV_2D\obj\Debug\Assembly-CSharp.pdb
+D:\Uni\2º\2º Trimestre\Desarrollo de Juegos 2D\ProyectoDesarrollo2D\P_DDV_2D\Temp\bin\Debug\Unity.2D.Animation.Editor.dll
+D:\Uni\2º\2º Trimestre\Desarrollo de Juegos 2D\ProyectoDesarrollo2D\P_DDV_2D\Temp\bin\Debug\Unity.2D.Animation.Runtime.dll
+D:\Uni\2º\2º Trimestre\Desarrollo de Juegos 2D\ProyectoDesarrollo2D\P_DDV_2D\Temp\bin\Debug\Unity.2D.Animation.Triangle.Runtime.dll
+D:\Uni\2º\2º Trimestre\Desarrollo de Juegos 2D\ProyectoDesarrollo2D\P_DDV_2D\Temp\bin\Debug\Unity.2D.IK.Editor.dll
+D:\Uni\2º\2º Trimestre\Desarrollo de Juegos 2D\ProyectoDesarrollo2D\P_DDV_2D\Temp\bin\Debug\Unity.2D.IK.Runtime.dll
+D:\Uni\2º\2º Trimestre\Desarrollo de Juegos 2D\ProyectoDesarrollo2D\P_DDV_2D\Temp\bin\Debug\Unity.2D.Animation.Runtime.pdb
+D:\Uni\2º\2º Trimestre\Desarrollo de Juegos 2D\ProyectoDesarrollo2D\P_DDV_2D\Temp\bin\Debug\Unity.2D.IK.Editor.pdb
+D:\Uni\2º\2º Trimestre\Desarrollo de Juegos 2D\ProyectoDesarrollo2D\P_DDV_2D\Temp\bin\Debug\Unity.2D.IK.Runtime.pdb
+D:\Uni\2º\2º Trimestre\Desarrollo de Juegos 2D\ProyectoDesarrollo2D\P_DDV_2D\Temp\bin\Debug\Unity.2D.Animation.Triangle.Runtime.pdb
+D:\Uni\2º\2º Trimestre\Desarrollo de Juegos 2D\ProyectoDesarrollo2D\P_DDV_2D\Temp\bin\Debug\Unity.2D.Animation.Editor.pdb
