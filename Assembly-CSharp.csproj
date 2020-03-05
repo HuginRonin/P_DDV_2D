@@ -115,6 +115,10 @@
     <Compile Include="Assets\Scripts\ShooterPlayerDetection.cs" />
     <Compile Include="Assets\Scripts\Structs\PlayerInfo.cs" />
     <Compile Include="Assets\Scripts\TrapPlayerDetection.cs" />
+    <Compile Include="Assets\Scripts\UI\ButtonSizer.cs" />
+    <Compile Include="Assets\Scripts\UI\EventManager.cs" />
+    <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\UI\HealthVisualizer.cs" />
     <Compile Include="Assets\Scripts\Weapon.cs" />
     <Compile Include="Assets\Scripts\WeaponManager.cs" />
     <Compile Include="Assets\Scripts\WindZone.cs" />

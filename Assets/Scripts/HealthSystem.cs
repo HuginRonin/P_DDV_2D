@@ -18,9 +18,14 @@ public class HealthSystem : MonoBehaviour, IDamageTaker
 
     public PlayerInfo pInfo;
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         currentHealth = maxHealth;
+    }
+
+    void Start()
+    {
+       
         dead = false;
     }
 
@@ -40,6 +45,8 @@ public class HealthSystem : MonoBehaviour, IDamageTaker
         {
             Die();
         }
+
+        BroadcastMessage("OnHit");
     }
 
     void Die()
