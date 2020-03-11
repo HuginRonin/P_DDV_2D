@@ -54,6 +54,16 @@ public class HealthSystem : MonoBehaviour, IDamageTaker
         OnDeath?.Invoke(pInfo);
         dead = true;
 
+        AudioSource source = GetComponentInChildren<AudioSource>();
+        if (source)
+        {
+            AudioManager.PlaySFX("PlayerDeath", source);
+        }
+        else
+        {
+            AudioManager.PlaySFX("PlayerDeath");
+        }
+
         gameObject.SetActive(false);
     }
 }
