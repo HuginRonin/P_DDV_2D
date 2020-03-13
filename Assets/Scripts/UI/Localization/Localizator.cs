@@ -26,6 +26,8 @@ public class Localizator : MonoBehaviour
         Instance = this;
         currentLanguage = defaultLanguage;
         ReadSheet();
+
+        DontDestroyOnLoad(gameObject);
     }
 
     private void ReadSheet()
@@ -42,7 +44,7 @@ public class Localizator : MonoBehaviour
 
     private void AddNewDataEntry(string s)
     {
-        string[] p = s.Split(new char[] { ',' }); //consultar como está en el archivo
+        string[] p = s.Split(new char[] { ';' }); //consultar como está en el archivo
         var languageData = new LanguageData(p);
         if(keyData == null)
         {

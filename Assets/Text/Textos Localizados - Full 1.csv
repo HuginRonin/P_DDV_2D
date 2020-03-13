@@ -1,6 +1,15 @@
-Key,Spanish,Catalan,English
-Play,Jugar,Jugar,Play
-SoundM,Sonido,So,Sound
-MusicM,Volumen de Sonido,Volum de So,Sound Volume
-MusicV,Música,Música,Music
-SFXV,Efectos,Efectes,Effects
+Key;Spanish;Catalan;English
+Play;Jugar;Jugar;Play
+SoundM;Sonido;So;Sound
+MusicM;Volumen de Sonido;Volum de So;Sound Volume
+MusicV;Música;Música;Music
+SFXV;Efectos;Efectes;Effects
+NPC_Javier;Javier;Xavi;Xavier
+JaviSaluda0;Hola buenas;Hola bones;Hey, what's up!
+JaviSaluda1A;Hola......;Bones......;Hey......
+JaviSaluda1B;No estoy disponible;No estic disponible;I am occupied
+JaviSaluda1C;Dame todo tu dinero;Dóna'm tots els teus diners;Give me all of your money
+JaviSaluda1A0;Sí hombre, soy Javi, ¿me recuerdas?;Si home, sóc el Xavi, te'n recordes?;Yeah man, I'm Xavier, remember me?
+JaviSaluda1C0;Por favor, tengo bocas a las que alimentar, no me hagas daño;Siusplau, tinc boques que alimentar, no em facis mal;Please, I have mouths to feed, don't hurt me
+JaviSaludaCA;Dejar escapar;Deixar escapar;Let him escape
+JaviSaludaCB;Perseguirle;Perseguir-lo;Chase him
