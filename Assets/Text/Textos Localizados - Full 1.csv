@@ -10,6 +10,31 @@ JaviSaluda1A;Hola......;Bones......;Hey......
 JaviSaluda1B;No estoy disponible;No estic disponible;I am occupied
 JaviSaluda1C;Dame todo tu dinero;Dóna'm tots els teus diners;Give me all of your money
 JaviSaluda1A0;Sí hombre, soy Javi, ¿me recuerdas?;Si home, sóc el Xavi, te'n recordes?;Yeah man, I'm Xavier, remember me?
+JaviSaludaAA;No,no realmente *Irse*;No,no realment *Anar-se*;No, ¡not really *Get Going* 
+JaviSaludaB0;OK;OK;OK
+JaviSaludaBA;Recibir un regalo espinoso;Rebre un regal espinós;Receive a thorny present
+JaviSaludaBB;Recibir un regalo afilado;Rebre un regal afilat;Receive a sharp present
 JaviSaluda1C0;Por favor, tengo bocas a las que alimentar, no me hagas daño;Siusplau, tinc boques que alimentar, no em facis mal;Please, I have mouths to feed, don't hurt me
 JaviSaludaCA;Dejar escapar;Deixar escapar;Let him escape
 JaviSaludaCB;Perseguirle;Perseguir-lo;Chase him
+
+NPC_María;María;Maria;Mariah
+Maria0;Soy María la Poderosa;Soc Maria la Poderosa;I am Mariah the Mighty
+MariaA;Reírse de la bruja;Riure de la bruixa;Laugh at the witch
+MariaA0;¿Así que con risitas? Veamos si te gusta el dolor;Així que rient? Vejam si t'agrada el dolor;Laughing, are we? Let's see how you like the pain
+MariaAA;Recibir 1p de daño por tu estupidez;Rebre 1p de mal per la teva estupidesa;Receive 1dmg for your stupidity
+MariaB;¿Y te inventas cosas?;I t'inventes coses?;And you invent stuff?
+MariaB0;Pues sí, puedo conjurar una roca o un huracán;Doncs si, puc conjurar una roca o un huracà;Indeed, I can summon a rock or a hurricane
+MariaBA;Invocar una roca;Conjurar una roca;Summon a rock
+MariaBB;Invocar un huracán;Conjurar un huracà;Summon a hurricane
+MariaC;Pedirle que te haga un truco;Demanar-li que et faci un truc;Ask her to do a trick for you
+MariaC0;Por supuesto, voy a desaparecer, pero no puedes mirar;Per suposat, vaig a desaparéixer, pero no pots mirar;Of course, I'm going to disappear, but you can't look
+MariaCA;Mirar con los ojos abiertos;Mirar amb els ulls oberts;Look with your eyes wide open
+MariaCB;Echar un vistacito;Donar un cop d'ull;Take a peek
+MariaCC;Cerrar los ojos;Tancar els ulls;Close your eyes
+MariaD;Señora, tengo prisa;Senyora, tinc presa;Lady, I'm in a hurry
+MariaD0;Bueno, no te distraigo más;D'acord, no et distraigo més;Okey, I won't bother you anymore
+MariaDA;Gracias;Gràcies;Thank you
+MariaDB;Que tenga un buen día;Que tingui un bon dia;Have a nice day
+MariaDC;Procure no coger frío;Procuri no agafar fred;Be careful to not catch a cold
+MariaDD;*Marcharse sin decir nada*;*Anar-se sense dir res*;*Leave without saying anything*

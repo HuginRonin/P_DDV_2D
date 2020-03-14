@@ -126,7 +126,10 @@
     <Compile Include="Assets\Scripts\UI\Dialogue\DialogueOption.cs" />
     <Compile Include="Assets\Scripts\UI\Dialogue\EndNode.cs" />
     <Compile Include="Assets\Scripts\UI\Dialogue\EndNodes\END_DoNothing.cs" />
+    <Compile Include="Assets\Scripts\UI\Dialogue\EndNodes\END_Explode.cs" />
     <Compile Include="Assets\Scripts\UI\Dialogue\EndNodes\END_Flee.cs" />
+    <Compile Include="Assets\Scripts\UI\Dialogue\EndNodes\END_Spawn.cs" />
+    <Compile Include="Assets\Scripts\UI\Dialogue\EndNodes\END_Teleport.cs" />
     <Compile Include="Assets\Scripts\UI\EventManager.cs" />
     <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
     <Compile Include="Assets\Scripts\UI\HealthVisualizer.cs" />

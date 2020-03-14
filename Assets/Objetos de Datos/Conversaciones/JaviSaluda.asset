@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterNameKey: NPC_Javier
   StartNode: {fileID: 11400000, guid: 4b26a0f76de6d7d4babcd9750ff9a44e, type: 2}
+  font: {fileID: 11400000, guid: 2cc8f6094aa8e8b4282bc4060d651fa9, type: 2}
+  dialoguepanel: {fileID: 21300000, guid: 2dea4711663ca7941bc32f9d3ceaf117, type: 3}
+  dialoguebuttons: {fileID: 21300000, guid: 15e49e4868be53642bbf5937cd32cc5c, type: 3}

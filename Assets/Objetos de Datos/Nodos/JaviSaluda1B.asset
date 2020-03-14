@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec26bc22953cbfa4bae81c34e9a15733, type: 3}
   m_Name: JaviSaluda1B
   m_EditorClassIdentifier: 
-  options: []
-  Speech: "Vaya por dios, \xBFcu\xE1ndo te llamo?"
+  options:
+  - KeyOptionText: JaviSaludaBA
+    NextNode: {fileID: 11400000, guid: f4c68525b1a4b494da0a6c9fe0ae780d, type: 2}
+  - KeyOptionText: JaviSaludaBB
+    NextNode: {fileID: 11400000, guid: f617b8d4601351c428489032376a421d, type: 2}
+  SpeechKey: JaviSaludaB0

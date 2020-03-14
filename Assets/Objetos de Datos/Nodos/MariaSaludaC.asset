@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec26bc22953cbfa4bae81c34e9a15733, type: 3}
+  m_Name: MariaSaludaC
+  m_EditorClassIdentifier: 
+  options:
+  - KeyOptionText: MariaCA
+    NextNode: {fileID: 11400000, guid: 499ed4efd20566f4aa305785ff330b06, type: 2}
+  - KeyOptionText: MariaCB
+    NextNode: {fileID: 11400000, guid: c9fff5a8e3f00e74aaf119db7f238ab0, type: 2}
+  - KeyOptionText: MariaCC
+    NextNode: {fileID: 11400000, guid: aecf6f35d7406d842a0d42f5b1ca1668, type: 2}
+  SpeechKey: MariaC0

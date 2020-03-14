@@ -13,6 +13,8 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI Name;
     public TextMeshProUGUI Speech;
     public TextMeshProUGUI[] OptionTexts;
+    public Image dialoguePanel;
+    public Image[] dialogueButtons;
 
     private GameObject _npc;
     private DialogueNode currentNode;
@@ -33,7 +35,12 @@ public class DialogueManager : MonoBehaviour
         DialogueAnimator.SetBool("Show", true);
     }
 
-    void HideDialogue()
+    public static void HideDialogue()
+    {
+        Instance._HideDialogue();
+    }
+
+    void _HideDialogue()
     {
         DialogueAnimator.SetBool("Show", false);
     }
@@ -48,9 +55,26 @@ public class DialogueManager : MonoBehaviour
         _npc = npc;
         currentNode = conversation.StartNode;
         Name.text = Localizator.GetText(conversation.CharacterNameKey);
+        SetStyle(conversation);
         SetText(currentNode);
 
         ShowDialogue();
+    }
+
+    private void SetStyle(Conversation conversation)
+    {
+        Name.font = conversation.font;
+        Speech.font = conversation.font;
+        foreach(TextMeshProUGUI t in OptionTexts)
+        {
+            t.font = conversation.font;
+        }
+
+        dialoguePanel.sprite = conversation.dialoguepanel;
+        foreach(Image i in dialogueButtons)
+        {
+            i.sprite = conversation.dialoguebuttons;
+        }
     }
 
     private void SetText(DialogueNode currentNode)

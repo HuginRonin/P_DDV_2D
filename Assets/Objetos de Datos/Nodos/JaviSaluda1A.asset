@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec26bc22953cbfa4bae81c34e9a15733, type: 3}
   m_Name: JaviSaluda1A
   m_EditorClassIdentifier: 
-  options: []
+  options:
+  - KeyOptionText: JaviSaludaAA
+    NextNode: {fileID: 11400000, guid: 2d470ea755fefb14f827b57a786d2a64, type: 2}
   SpeechKey: JaviSaluda1A0
